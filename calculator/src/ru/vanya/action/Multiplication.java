@@ -13,4 +13,8 @@ public class Multiplication {
 
   private final int FRACTINAL_NUMBER = 2;
 
+  public int showResult() {
+
+    
+  }
 }
