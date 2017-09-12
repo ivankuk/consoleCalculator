@@ -13,8 +13,19 @@ public class Division {
 
   private final int FRACTINAL_NUMBER = 2;
 
-  private float translationTypeData() {}
+  private float translationTypeData(final int newDividend, final int newDivider) {
 
-  public int showResult() {}
+      float theDividend = (int) newDividend;
+
+      float theDivider = (int) newDivider;
+
+      return theDividend;
+
+  }
+
+  public int showResult() {
+
+    return INTEGER_NUMBER;
+  }
 
 }
