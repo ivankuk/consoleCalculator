@@ -19,13 +19,56 @@ public class Division {
 
       float theDivider = (int) newDivider;
 
-      return theDividend;
+      float chasnoe = theDividend / theDivider;
+
+      return chasnoe;
 
   }
 
   public int showResult() {
 
+    System.out.println();
+
+    System.out.println(INTEGER_NUMBER + " - Целое число ");
+
+    System.out.println(FRACTINAL_NUMBER + " - Дробное число ");
+
+    int choice = SCANNER.nextInt();
+
+    switch (choice) {
+
+      case INTEGER_NUMBER:
+
+        System.out.println();
+
+        System.out.println("Введите делимое ");
+
+        System.out.println();
+
+        System.out.println("> ");
+
+        int theDividendInteger = SCANNER.nextInt();
+
+        System.out.println();
+
+        System.out.println("Введите делитель ");
+
+        System.out.println();
+
+        System.out.println("> ");
+
+        int theDividerInteger = SCANNER.nextInt();
+
+        System.out.println();
+
+        System.out.println(theDividendInteger + DIVISION_SING + theDividerInteger + SAME_SIGN + translationTypeData(theDividendInteger, theDividerInteger));
+
+
+
+    }
+
     return INTEGER_NUMBER;
+
   }
 
 }
