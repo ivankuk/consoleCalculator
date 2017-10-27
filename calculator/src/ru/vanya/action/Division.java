@@ -33,6 +33,8 @@ public class Division {
 
     System.out.println(FRACTINAL_NUMBER + " - Дробное число ");
 
+    System.out.print("> ");
+
     int choice = SCANNER.nextInt();
 
     switch (choice) {
@@ -45,7 +47,7 @@ public class Division {
 
         System.out.println();
 
-        System.out.println("> ");
+        System.out.print("> ");
 
         int theDividendInteger = SCANNER.nextInt();
 
@@ -55,7 +57,7 @@ public class Division {
 
         System.out.println();
 
-        System.out.println("> ");
+        System.out.print("> ");
 
         int theDividerInteger = SCANNER.nextInt();
 
@@ -63,7 +65,39 @@ public class Division {
 
         System.out.println(theDividendInteger + DIVISION_SING + theDividerInteger + SAME_SIGN + translationTypeData(theDividendInteger, theDividerInteger));
 
+        break;
 
+      case FRACTINAL_NUMBER:
+
+        System.out.println();
+
+        System.out.println("Ввод дробей такой 1,0");
+
+        System.out.println();
+
+        System.out.println("Введите делимое ");
+
+        System.out.println();
+
+        System.out.print("> ");
+
+        float dividend = SCANNER.nextFloat();
+
+        System.out.println();
+
+        System.out.println("Введите делитель ");
+
+        System.out.println();
+
+        System.out.print("> ");
+
+        float divider = nextFloat();
+
+        float thePrivate = dividend / divider;
+
+        System.out.println();
+
+        System.out.println(dividend + DIVISION_SING + divider + SAME_SIGN + thePrivate);
 
     }
 
