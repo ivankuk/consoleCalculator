@@ -12,6 +12,8 @@ public class MainMenuView {
 
   private final Multiplication MULTIPLICATION = new Multiplication();
 
+  private final Division DIVISION = new Division();
+
   private final int EXIT = 0;
 
   private final int POINTER_ADDITION = 1;
@@ -20,7 +22,11 @@ public class MainMenuView {
 
   private final int POINTER_MULTIPLICATION = 3;
 
+  private final int POINTER_DIVISION = 4;
+
   public int showMenu() {
+
+    System.out.println();
 
     System.out.println(POINTER_ADDITION + " - Сложение");
 
@@ -34,9 +40,15 @@ public class MainMenuView {
 
     System.out.println();
 
+    System.out.println(POINTER_DIVISION + " - Деление");
+
+    System.out.println();
+
     System.out.println(EXIT + " -  Выход");
 
     System.out.println();
+
+    System.out.print("> ");
 
     int choice = SCANNER.nextInt();
 
@@ -60,13 +72,19 @@ public class MainMenuView {
 
       break;
 
+      case POINTER_DIVISION:
+
+      DIVISION.showResult();
+
+      break;
+
       case EXIT:
 
       System.out.println("Выход из калькулятора");
 
     }
 
-    return POINTER_ADDITION;
+    return choice;
 
   }
 
