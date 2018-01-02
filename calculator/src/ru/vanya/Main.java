@@ -13,7 +13,13 @@ public class Main {
 
       MAIN_MENU_VIEW.showMenu();
 
-    } while (MAIN_MENU_VIEW.showMenu() != EXIT);
+      if (MAIN_MENU_VIEW.showMenu() == EXIT) {
+
+        System.exit(EXIT);
+
+      }
+
+    } while (MAIN_MENU_VIEW.showMenu() == EXIT);
 
   }
 
