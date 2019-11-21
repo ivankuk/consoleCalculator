@@ -91,7 +91,7 @@ public class Division {
 
         System.out.print("> ");
 
-        float divider = nextFloat();
+        float divider = SCANNR.nextFloat();
 
         float thePrivate = dividend / divider;
 
